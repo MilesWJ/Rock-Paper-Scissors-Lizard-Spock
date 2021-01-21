@@ -1,51 +1,66 @@
 import random
+from player_computer import Player, Computer
 
-decide = random.randint(1, 3)
-computer = ''
-user = str(input("Enter your move? (Rock, Paper, Scissors) Type Here: ")).lower()
 
-if decide == 1:
-    computer = 'rock'
-if decide == 2:
-    computer = 'paper'
-if decide == 3:
-    computer = 'scissors'
+def computer_decide():
 
-if user == "rock" and computer == "rock":
-    print("User chose rock!")
-    print("Computer chose rock!")
-    print("It's a tie!")
-if user == "rock" and computer == "paper":
-    print("User chose rock!")
-    print("Computer chose paper!")
-    print("Computer wins!")
-if user == "rock" and computer == "scissors":
-    print("User chose rock!")
-    print("Computer chose scissors!")
-    print("User wins!")
+    Computer.random = random.randint(1, 1)
 
-if user == "paper" and computer == "rock":
-    print("User chose paper!")
-    print("Computer chose rock!")
-    print("User wins!")
-if user == "paper" and computer == "paper":
-    print("User chose paper!")
-    print("Computer chose paper!")
-    print("It's a tie!")
-if user == "paper" and computer == "scissors":
-    print("User chose paper!")
-    print("Computer chose scissors!")
-    print("Computer wins!")
+    if Computer.random == 1:
+        Computer.move = "rock"
 
-if user == "scissors" and computer == "rock":
-    print("User chose scissors!")
-    print("Computer chose rock!")
-    print("Computer wins!")
-if user == "scissors" and computer == "paper":
-    print("User chose scissors!")
-    print("Computer chose paper!")
-    print("User wins!")
-if user == "scissors" and computer == "scissors":
-    print("User chose scissors!")
-    print("Computer chose scissors!")
-    print("It's a tie!")
+    elif Computer.random == 2:
+        Computer.move = "paper"
+
+    elif Computer.random == 3:
+        Computer.move = "scissors"
+
+
+def play_game():
+
+    Player.move = str(input("\n[MOVES: ROCK, PAPER, SCISSORS]\nWhat move would you like to use? ")).lower()
+
+    computer_decide()
+
+    if Player.move == "rock" and Computer.move == "rock":
+        print("\nPlayer chose rock!")
+        print("Computer chose rock!")
+        print("It's a tie!")
+    if Player.move == "rock" and Computer.move == "paper":
+        print("\nPlayer chose rock!")
+        print("Computer chose paper!")
+        print("Computer wins!")
+    if Player.move == "rock" and Computer.move == "scissors":
+        print("\nPlayer chose rock!")
+        print("Computer chose scissors!")
+        print("Player wins!")
+
+    if Player.move == "paper" and Computer.move == "rock":
+        print("\nPlayer chose paper!")
+        print("Computer chose rock!")
+        print("Player wins!")
+    if Player.move == "paper" and Computer.move == "paper":
+        print("\nPlayer chose paper!")
+        print("Computer chose paper!")
+        print("It's a tie!")
+    if Player.move == "paper" and Computer.move == "scissors":
+        print("\nPlayer chose paper!")
+        print("Computer chose scissors!")
+        print("Computer wins!")
+
+    if Player.move == "scissors" and Computer.move == "rock":
+        print("\nPlayer chose scissors!")
+        print("Computer chose rock!")
+        print("Computer wins!")
+    if Player.move == "scissors" and Computer.move == "paper":
+        print("\nPlayer chose scissors!")
+        print("Computer chose paper!")
+        print("Player wins!")
+    if Player.move == "scissors" and Computer.move == "scissors":
+        print("\nUser chose scissors!")
+        print("Computer chose scissors!")
+        print("It's a tie!")
+
+
+while True:
+    play_game()
