@@ -1,0 +1,8 @@
+﻿  Game.cpp
+C:\Users\Miles James\Code Projects\Rock Paper Scissors Lizard Spock\Game.cpp(21,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 20 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Rock Paper Scissors Lizard Spock.vcxproj -> C:\Users\Miles James\Code Projects\Rock Paper Scissors Lizard Spock\Release\Rock Paper Scissors Lizard Spock.exe

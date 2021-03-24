@@ -1,0 +1,5 @@
+﻿  Game.cpp
+C:\Users\Miles James\Code Projects\Rock Paper Scissors Lizard Spock\Game.cpp(21,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  main.cpp
+  Generating Code...
+  Rock Paper Scissors Lizard Spock.vcxproj -> C:\Users\Miles James\Code Projects\Rock Paper Scissors Lizard Spock\Debug\Rock Paper Scissors Lizard Spock.exe
